@@ -9,7 +9,7 @@ void UBullCowCartridge::BeginPlay() // When the game starts
     PrintLine(TEXT("Hit 'Tab' to activate this computer sign"));
     PrintLine(TEXT("Then Type something and hit Enter!"));
 
-    InitGame();
+    SetupGame();
 
     // Prompt Player for Guess
 }
@@ -48,7 +48,7 @@ void UBullCowCartridge::OnInput(const FString& Input) // When the player hits en
     }
 }
 
-void UBullCowCartridge::InitGame()
+void UBullCowCartridge::SetupGame()
 {
     HiddenWord = TEXT("isogram");
     Lives = 5;
